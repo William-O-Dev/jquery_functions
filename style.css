@@ -1,0 +1,12 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#click p {
+    color: red;
+}
+
+#click span {
+    color: blue;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#click').click(function(){
+                $('#click p').css('color', 'blue');
+            });
+
+            $('#hide').click(function(){
+                $('#hide p').hide();
+            });
+
+            $('#show').click(function(){
+                $('#hide p').show();
+            });
+
+            $('#toggle').click(function(){
+                $('#toggle p').toggle();
+            });
+
+            $('#slide_down').click(function(){
+                $('#slide_down p').hide();
+                $('#slide_down p').slideDown("slow");
+            });
+
+            $('#slide_up').click(function(){
+                $('#slide_up p').slideUp("slow");
+            });
+
+            $('#slide_toggle').click(function(){
+                $('#slide_toggle p').slideToggle();
+            });
+
+            $('#fade_in').click(function(){
+                $('#fade_in p').hide();
+                $('#fade_in p').fadeIn("slow");
+            });
+
+            $('#fade_out').click(function(){
+                $('#fade_out p').fadeOut("slow");
+            });
+
+            // $('#add_class').click(function(){
+            //     $('#add_class p').addclass();
+            // });
+
+            $('#before').click(function(){
+                $('#before p').before("<p>Hello, User!</p>");
+            });
+
+            $('#after').click(function(){
+                $('#after p').after("<p>Thanks for coming!</p>");
+            });
+
+            $('#append').click(function(){
+                $('#append p').append(" This is the second sentence you added by clicking the button.");
+            });
+
+            // $('#html').click(function(){
+            //     $('#html p').html();
+            // });
+
+            $('#text').click(function(){
+                $('#text p').text("This is the new sentence you replaced the old one with by clicking the button.");
+            });
+        });
+    </script>
+    
+    <title>JQuery Functions Assignment</title>
+</head>
+<body>
+    <div id="click">
+        <h1>.click</h1>
+        <button>CLICK ME!</button>
+        <p>Click the button to change this text color to <span>blue</span>.</p>
+    </div>
+
+    <div id="hide">
+        <h1>.hide</h1>
+        <button>CLICK ME!</button>
+        <p>Click the button to hide this text.</p>
+    </div>
+
+    <div id="show">
+        <h1>.show</h1>
+        <button>CLICK ME!</button>
+        <p>Click the button to show the text above after it was hidden.</p>
+    </div>
+
+    <div id="toggle">
+        <h1>.toggle</h1>
+        <button>CLICK ME!</button>
+        <p>Click the button to hide this text. Click the button again to show it after it was hidden.</p>
+    </div>
+
+    <div id="slide_down">
+        <h1>.slidedown</h1>
+        <button>CLICK ME!</button>
+        <p>Click the button to watch this text appear from the top down.</p>
+    </div>
+
+    <div id="slide_up">
+        <h1>.slideup</h1>
+        <button>CLICK ME!</button>
+        <p>Click the button to watch this text disapper from the bottom up.</p>
+    </div>
+
+    <div id="slide_toggle">
+        <h1>.slidetoggle</h1>
+        <button>CLICK ME!</button>
+        <p>Click the button to watch this text disapper from the bottom up. Click the button again to watch this text re-appear from top down.</p>
+    </div>
+
+    <div id="fade_in">
+        <h1>.fadein</h1>
+        <button>CLICK ME!</button>
+        <p>Click the button to watch this text appear slowly.</p>
+    </div>
+
+    <div id="fade_out">
+        <h1>.fadeout</h1>
+        <button>CLICK ME!</button>
+        <p>Click the button to watch this text slowly disapper.</p>
+    </div>
+
+    <!-- <div id="add_class">
+        <h1>.addclass</h1>
+        <button>CLICK ME!</button>
+        <p>Click the button to watch this text slowly disapper.</p>
+    </div> -->
+
+    <div id="before">
+        <h1>.before</h1>
+        <button>CLICK ME!</button>
+        <p>Click the button to add a salutation to the beginning of this sentence.</p>
+    </div>
+
+    <div id="after">
+        <h1>.after</h1>
+        <button>CLICK ME!</button>
+        <p>Click the button to add a closing to the end of this sentence.</p>
+    </div>
+
+    <div id="append">
+        <h1>.append</h1>
+        <button>CLICK ME!</button>
+        <p>Click the button to append a second sentence after this sentence.</p>
+    </div>
+
+    <!-- <div id="html">
+        <h1>.html</h1>
+        <button>CLICK ME!</button>
+        <p>Click the button to show the HTML of this DIV.</p>
+    </div> -->
+
+    <div id="text">
+        <h1>.text</h1>
+        <button>CLICK ME!</button>
+        <p>Click the button to replace this sentence with another sentence.</p>
+    </div>
+
+
+    
+</body>
+</html>
